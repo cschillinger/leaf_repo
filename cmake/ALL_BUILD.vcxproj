@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3838A40-47D9-3608-A84E-654553CEAAC8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCXXCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeRCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeSystem.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\configs\azure_iot_sdksFunctions.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\dependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCXXCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeRCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeSystem.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\configs\azure_iot_sdksFunctions.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\dependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCXXCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeRCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeSystem.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\configs\azure_iot_sdksFunctions.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\dependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeCXXCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeRCCompiler.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\3.15.0\CMakeSystem.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\configs\azure_iot_sdksFunctions.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\dependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\ZERO_CHECK.vcxproj">
+      <Project>{475F7B04-CB66-362D-8B84-4B60A20D6CBC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\c-utility\aziotsharedutil.vcxproj">
+      <Project>{2010C007-0609-3CC4-81BF-72F9D2FAD3AA}</Project>
+      <Name>aziotsharedutil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\digitaltwin_client\digitaltwin_client.vcxproj">
+      <Project>{DA3E4057-5B7C-3145-913B-64B4C32746DD}</Project>
+      <Name>digitaltwin_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\hsm_security_client.vcxproj">
+      <Project>{0015C238-38B4-3C95-A557-C8B56A95F202}</Project>
+      <Name>hsm_security_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client.vcxproj">
+      <Project>{8302C144-F92C-3AD1-A757-31B2D16C8FF5}</Project>
+      <Name>iothub_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_amqp_transport.vcxproj">
+      <Project>{94172842-30FF-36D7-AA61-15C1755213D9}</Project>
+      <Name>iothub_client_amqp_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_amqp_ws_transport.vcxproj">
+      <Project>{78ADDFC8-0578-3E6D-9D9A-1A0AEB4A310A}</Project>
+      <Name>iothub_client_amqp_ws_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_http_transport.vcxproj">
+      <Project>{BC98FD35-69F2-37CB-9203-3F9849953EC7}</Project>
+      <Name>iothub_client_http_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_mqtt_transport.vcxproj">
+      <Project>{F8B01DBB-40AF-3210-8F1C-1AB37EC43267}</Project>
+      <Name>iothub_client_mqtt_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_mqtt_ws_transport.vcxproj">
+      <Project>{6C61DCF1-DE77-3C62-B553-FAC31C84E27D}</Project>
+      <Name>iothub_client_mqtt_ws_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_service_client\iothub_service_client.vcxproj">
+      <Project>{FB931464-4A26-3157-94D8-47288AEB8077}</Project>
+      <Name>iothub_service_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\msr_riot.vcxproj">
+      <Project>{9D9FF203-0CF4-38A2-9FC2-158A5514EC39}</Project>
+      <Name>msr_riot</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\parson.vcxproj">
+      <Project>{2F829B11-7DF6-3794-BA0A-202CF6A831D4}</Project>
+      <Name>parson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_amqp_transport.vcxproj">
+      <Project>{794C7F11-57C5-3A4E-BDA5-4AA053AFEA01}</Project>
+      <Name>prov_amqp_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_amqp_ws_transport.vcxproj">
+      <Project>{79771DF6-AECE-3585-AA6B-9E1394079152}</Project>
+      <Name>prov_amqp_ws_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_auth_client.vcxproj">
+      <Project>{4D16A2BA-7083-3582-AFC1-61FE8B0032CB}</Project>
+      <Name>prov_auth_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_device_client.vcxproj">
+      <Project>{3F792E1B-20B2-3846-AC77-DE7372316B30}</Project>
+      <Name>prov_device_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_device_ll_client.vcxproj">
+      <Project>{8C24E8C9-0AA5-3D2B-8869-68CB813210EB}</Project>
+      <Name>prov_device_ll_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_http_transport.vcxproj">
+      <Project>{D84FE449-6994-3C0B-A2C8-94A8F4898423}</Project>
+      <Name>prov_http_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_mqtt_transport.vcxproj">
+      <Project>{5AF21C2F-E398-39F8-8160-E0D90A8F532B}</Project>
+      <Name>prov_mqtt_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_mqtt_ws_transport.vcxproj">
+      <Project>{55551606-6381-3F25-90BB-5D977578112F}</Project>
+      <Name>prov_mqtt_ws_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_service_client\provisioning_service_client.vcxproj">
+      <Project>{567022FD-20A0-3720-8E2F-5C519052FBDD}</Project>
+      <Name>provisioning_service_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\sensor_app.vcxproj">
+      <Project>{F0419E06-32DE-3409-A0CB-CBD61ACC72E9}</Project>
+      <Name>sensor_app</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\serializer\serializer.vcxproj">
+      <Project>{DAE94BEA-5FA5-385A-A58C-F424BB981938}</Project>
+      <Name>serializer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\uamqp.vcxproj">
+      <Project>{8A149D48-CECB-379B-B5BB-F2874A735F59}</Project>
+      <Name>uamqp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\deps\uhttp\uhttp.vcxproj">
+      <Project>{14F4C570-BE85-3B36-9A54-66308ADB244B}</Project>
+      <Name>uhttp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\deps\umock-c\umock_c.vcxproj">
+      <Project>{0A6FAA47-5BF9-362D-B28B-6D0B13406A32}</Project>
+      <Name>umock_c</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\umqtt\umqtt.vcxproj">
+      <Project>{060E026C-FC10-3E67-BD5C-21822853C331}</Project>
+      <Name>umqtt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

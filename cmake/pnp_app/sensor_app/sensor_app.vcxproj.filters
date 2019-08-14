@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\deviceinfo_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_client_helper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_serializer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\sensor_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\pnp_device.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\sample_device_impl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\deviceinfo_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_client_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_serializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\sensor_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\pnp_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\sample_device_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B512A864-39DB-35D7-8587-02ABC32CEEA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B20C779F-0167-33D7-A26D-38F311C28C42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

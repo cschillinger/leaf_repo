@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F0419E06-32DE-3409-A0CB-CBD61ACC72E9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>sensor_app</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sensor_app.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sensor_app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sensor_app.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sensor_app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sensor_app.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sensor_app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sensor_app.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sensor_app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USE_PROV_MODULE;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\parson.lib;..\..\iothub_client\Debug\iothub_client.lib;..\..\digitaltwin_client\Debug\digitaltwin_client.lib;..\..\iothub_client\Debug\iothub_client_http_transport.lib;..\..\iothub_client\Debug\iothub_client_amqp_transport.lib;..\..\iothub_client\Debug\iothub_client_amqp_ws_transport.lib;..\..\iothub_client\Debug\iothub_client_mqtt_transport.lib;..\..\iothub_client\Debug\iothub_client_mqtt_ws_transport.lib;..\..\umqtt\Debug\umqtt.lib;..\..\provisioning_client\Debug\prov_auth_client.lib;..\..\provisioning_client\Debug\hsm_security_client.lib;..\..\provisioning_client\deps\Debug\msr_riot.lib;..\..\provisioning_client\deps\utpm\Debug\utpm.lib;tbs.lib;Tbs.lib;..\..\Debug\parson.lib;..\..\c-utility\Debug\aziotsharedutil.lib;crypt32.lib;winhttp.lib;crypt32.lib;winhttp.lib;ws2_32.lib;secur32.lib;advapi32.lib;ncrypt.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/Debug/sensor_app.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/Debug/sensor_app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Release\parson.lib;..\..\iothub_client\Release\iothub_client.lib;..\..\digitaltwin_client\Release\digitaltwin_client.lib;..\..\iothub_client\Release\iothub_client_http_transport.lib;..\..\iothub_client\Release\iothub_client_amqp_transport.lib;..\..\iothub_client\Release\iothub_client_amqp_ws_transport.lib;..\..\iothub_client\Release\iothub_client_mqtt_transport.lib;..\..\iothub_client\Release\iothub_client_mqtt_ws_transport.lib;..\..\umqtt\Release\umqtt.lib;..\..\provisioning_client\Release\prov_auth_client.lib;..\..\provisioning_client\Release\hsm_security_client.lib;..\..\provisioning_client\deps\Release\msr_riot.lib;..\..\provisioning_client\deps\utpm\Release\utpm.lib;tbs.lib;Tbs.lib;..\..\Release\parson.lib;..\..\c-utility\Release\aziotsharedutil.lib;crypt32.lib;winhttp.lib;crypt32.lib;winhttp.lib;ws2_32.lib;secur32.lib;advapi32.lib;ncrypt.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/Release/sensor_app.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/Release/sensor_app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\MinSizeRel\parson.lib;..\..\iothub_client\MinSizeRel\iothub_client.lib;..\..\digitaltwin_client\MinSizeRel\digitaltwin_client.lib;..\..\iothub_client\MinSizeRel\iothub_client_http_transport.lib;..\..\iothub_client\MinSizeRel\iothub_client_amqp_transport.lib;..\..\iothub_client\MinSizeRel\iothub_client_amqp_ws_transport.lib;..\..\iothub_client\MinSizeRel\iothub_client_mqtt_transport.lib;..\..\iothub_client\MinSizeRel\iothub_client_mqtt_ws_transport.lib;..\..\umqtt\MinSizeRel\umqtt.lib;..\..\provisioning_client\MinSizeRel\prov_auth_client.lib;..\..\provisioning_client\MinSizeRel\hsm_security_client.lib;..\..\provisioning_client\deps\MinSizeRel\msr_riot.lib;..\..\provisioning_client\deps\utpm\MinSizeRel\utpm.lib;tbs.lib;Tbs.lib;..\..\MinSizeRel\parson.lib;..\..\c-utility\MinSizeRel\aziotsharedutil.lib;crypt32.lib;winhttp.lib;crypt32.lib;winhttp.lib;ws2_32.lib;secur32.lib;advapi32.lib;ncrypt.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/MinSizeRel/sensor_app.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/MinSizeRel/sensor_app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\.\utilities;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\parson;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\iothub_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\digitaltwin_client\inc\internal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\RelWithDebInfo\parson.lib;..\..\iothub_client\RelWithDebInfo\iothub_client.lib;..\..\digitaltwin_client\RelWithDebInfo\digitaltwin_client.lib;..\..\iothub_client\RelWithDebInfo\iothub_client_http_transport.lib;..\..\iothub_client\RelWithDebInfo\iothub_client_amqp_transport.lib;..\..\iothub_client\RelWithDebInfo\iothub_client_amqp_ws_transport.lib;..\..\iothub_client\RelWithDebInfo\iothub_client_mqtt_transport.lib;..\..\iothub_client\RelWithDebInfo\iothub_client_mqtt_ws_transport.lib;..\..\umqtt\RelWithDebInfo\umqtt.lib;..\..\provisioning_client\RelWithDebInfo\prov_auth_client.lib;..\..\provisioning_client\RelWithDebInfo\hsm_security_client.lib;..\..\provisioning_client\deps\RelWithDebInfo\msr_riot.lib;..\..\provisioning_client\deps\utpm\RelWithDebInfo\utpm.lib;tbs.lib;Tbs.lib;..\..\RelWithDebInfo\parson.lib;..\..\c-utility\RelWithDebInfo\aziotsharedutil.lib;crypt32.lib;winhttp.lib;crypt32.lib;winhttp.lib;ws2_32.lib;secur32.lib;advapi32.lib;ncrypt.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/RelWithDebInfo/sensor_app.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/RelWithDebInfo/sensor_app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/pnp_app/sensor_app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/pnp_app/sensor_app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/pnp_app/sensor_app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/pnp_app/sensor_app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/pnp_app/sensor_app/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\pnp_app\sensor_app\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\deviceinfo_interface.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_client_helper.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_serializer.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\sensor_interface.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\main.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\pnp_device.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\sample_device_impl.c" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\deviceinfo_interface.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_client_helper.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\digitaltwin_serializer.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\utilities\sensor_interface.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\pnp_device.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\pnp_app\sensor_app\sample_device_impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\ZERO_CHECK.vcxproj">
+      <Project>{475F7B04-CB66-362D-8B84-4B60A20D6CBC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\c-utility\aziotsharedutil.vcxproj">
+      <Project>{2010C007-0609-3CC4-81BF-72F9D2FAD3AA}</Project>
+      <Name>aziotsharedutil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\digitaltwin_client\digitaltwin_client.vcxproj">
+      <Project>{DA3E4057-5B7C-3145-913B-64B4C32746DD}</Project>
+      <Name>digitaltwin_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\hsm_security_client.vcxproj">
+      <Project>{0015C238-38B4-3C95-A557-C8B56A95F202}</Project>
+      <Name>hsm_security_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client.vcxproj">
+      <Project>{8302C144-F92C-3AD1-A757-31B2D16C8FF5}</Project>
+      <Name>iothub_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_amqp_transport.vcxproj">
+      <Project>{94172842-30FF-36D7-AA61-15C1755213D9}</Project>
+      <Name>iothub_client_amqp_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_amqp_ws_transport.vcxproj">
+      <Project>{78ADDFC8-0578-3E6D-9D9A-1A0AEB4A310A}</Project>
+      <Name>iothub_client_amqp_ws_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_http_transport.vcxproj">
+      <Project>{BC98FD35-69F2-37CB-9203-3F9849953EC7}</Project>
+      <Name>iothub_client_http_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_mqtt_transport.vcxproj">
+      <Project>{F8B01DBB-40AF-3210-8F1C-1AB37EC43267}</Project>
+      <Name>iothub_client_mqtt_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\iothub_client\iothub_client_mqtt_ws_transport.vcxproj">
+      <Project>{6C61DCF1-DE77-3C62-B553-FAC31C84E27D}</Project>
+      <Name>iothub_client_mqtt_ws_transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\msr_riot.vcxproj">
+      <Project>{9D9FF203-0CF4-38A2-9FC2-158A5514EC39}</Project>
+      <Name>msr_riot</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\parson.vcxproj">
+      <Project>{2F829B11-7DF6-3794-BA0A-202CF6A831D4}</Project>
+      <Name>parson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\prov_auth_client.vcxproj">
+      <Project>{4D16A2BA-7083-3582-AFC1-61FE8B0032CB}</Project>
+      <Name>prov_auth_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\umqtt\umqtt.vcxproj">
+      <Project>{060E026C-FC10-3E67-BD5C-21822853C331}</Project>
+      <Name>umqtt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\utpm\utpm.vcxproj">
+      <Project>{43F77EA5-0889-3B10-86A8-AF93255B6EB7}</Project>
+      <Name>utpm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

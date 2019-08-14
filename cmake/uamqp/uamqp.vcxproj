@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A149D48-CECB-379B-B5BB-F2874A735F59}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>uamqp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">uamqp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">uamqp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">uamqp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">uamqp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">uamqp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">uamqp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">uamqp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">uamqp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;REFCOUNT_ATOMIC_DONTCARE;__STDC_NO_ATOMICS__=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/uamqp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/uamqp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\configs\azure_iot_build_rules.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\configs\uamqpConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/uamqp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/uamqp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\configs\azure_iot_build_rules.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\configs\uamqpConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/uamqp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/uamqp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\configs\azure_iot_build_rules.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\configs\uamqpConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/uamqp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/uamqp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\configs\azure_iot_build_rules.cmake;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\configs\uamqpConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\uamqp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\amqp_definitions.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\amqp_frame_codec.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\amqp_management.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\amqpvalue.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\amqpvalue_to_string.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\async_operation.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\cbs.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\connection.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\frame_codec.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\header_detect_io.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\link.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\message.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\message_receiver.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\message_sender.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\messaging.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\sasl_anonymous.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\sasl_frame_codec.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\sasl_mechanism.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\sasl_server_mechanism.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\sasl_mssbcbs.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\sasl_plain.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\saslclientio.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\session.c" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_role.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sender_settle_mode.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_receiver_settle_mode.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_handle.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_seconds.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_milliseconds.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_delivery_tag.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sequence_no.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_delivery_number.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_transfer_number.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_message_format.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_ietf_language_tag.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_fields.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_error.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_amqp_error.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_connection_error.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_session_error.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_link_error.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_open.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_begin.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_attach.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_flow.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_transfer.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_disposition.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_detach.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_end.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_close.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sasl_code.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sasl_mechanisms.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sasl_init.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sasl_challenge.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sasl_response.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_sasl_outcome.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_terminus_durability.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_terminus_expiry_policy.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_node_properties.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_filter_set.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_source.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_target.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_annotations.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_message_id_ulong.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_message_id_uuid.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_message_id_binary.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_message_id_string.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_address_string.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_header.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_delivery_annotations.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_message_annotations.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_application_properties.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_data.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_amqp_sequence.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_amqp_value.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_footer.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_properties.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_received.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_accepted.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_rejected.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_released.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions_modified.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_definitions.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_frame_codec.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_management.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqp_types.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqpvalue.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\amqpvalue_to_string.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\async_operation.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\cbs.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\connection.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\frame_codec.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\header_detect_io.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\link.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\message.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\message_receiver.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\message_sender.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\messaging.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_anonymous.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_frame_codec.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_mechanism.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_server_mechanism.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_mssbcbs.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_plain.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\saslclientio.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\sasl_server_io.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\server_protocol_io.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\session.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\socket_listener.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\inc\azure_uamqp_c\uamqp.h" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\uamqp\src\socket_listener_win32.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\ZERO_CHECK.vcxproj">
+      <Project>{475F7B04-CB66-362D-8B84-4B60A20D6CBC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\c-utility\aziotsharedutil.vcxproj">
+      <Project>{2010C007-0609-3CC4-81BF-72F9D2FAD3AA}</Project>
+      <Name>aziotsharedutil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

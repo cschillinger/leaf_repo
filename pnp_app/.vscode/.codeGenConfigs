@@ -1,0 +1,11 @@
+{
+    "codeGenExecutionItems": [
+        {
+            "capabilityModelPath": "SampleDevice.capabilitymodel.json",
+            "projectName": "sensor_app",
+            "languageLabel": "ANSI C",
+            "codeGenProjectType": "CMake",
+            "deviceConnectionType": "DeviceConnectionString"
+        }
+    ]
+}

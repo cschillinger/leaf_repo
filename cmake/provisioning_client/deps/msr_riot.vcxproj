@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D9FF203-0CF4-38A2-9FC2-158A5514EC39}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>msr_riot</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">msr_riot.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">msr_riot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">msr_riot.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">msr_riot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">msr_riot.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">msr_riot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">msr_riot.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">msr_riot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USE_PROV_MODULE;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4232</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_PROV_MODULE;NDEBUG;_CRT_SECURE_NO_WARNINGS;ARCHITECTURE_x86=1;GB_MEASURE_MEMORY_FOR_THIS;GB_DEBUG_ALLOC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\azure-macro-utils-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\deps\umock-c\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\inc;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\c-utility\pal\windows;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\DICE;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT;C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\.\RIoT\Emulator\RIoT\RIoTCrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/provisioning_client/deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/provisioning_client/deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalProject.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/provisioning_client/deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/provisioning_client/deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalProject.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/provisioning_client/deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/provisioning_client/deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalProject.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/provisioning_client/deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp -BC:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake --check-stamp-file C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/provisioning_client/deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalProject.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\provisioning_client\deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\DICE\DiceSha256.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotAes128.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotAesTables.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotCrypt.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotDerEnc.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotEcc.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotHmac.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotKdf.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotSha256.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotX509Bldr.c" />
+    <ClCompile Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotBase64.c" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\DICE\DiceSha256.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoT.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RiotStatus.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotAes128.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotCrypt.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotDerEnc.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotEcc.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotHmac.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotKdf.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotSha256.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotTarget.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotX509Bldr.h" />
+    <ClInclude Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\include\RiotBase64.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\t-chschi\Documents\azure-iot-sdk-c-pnp\cmake\ZERO_CHECK.vcxproj">
+      <Project>{475F7B04-CB66-362D-8B84-4B60A20D6CBC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

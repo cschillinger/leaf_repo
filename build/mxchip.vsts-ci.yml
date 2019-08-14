@@ -1,0 +1,44 @@
+name: $(BuildID)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+resources:
+- repo: self
+  clean: true
+phases:
+- phase: iotz
+  queue:
+    name: devicelab-01
+  steps:
+  - script: |
+      sudo apt-get update && sudo apt-get install -y \
+      curl \
+      git \
+      python-software-properties \
+      build-essential \
+      pkg-config
+      sudo curl -sL https://deb.nodesource.com/setup_6.x | bash -
+      sudo apt-get install -y nodejs
+      sudo rm -rf devkit-mbedos5-pnp-sample
+    displayName: 'setup'        
+  - script: |  
+      git clone https://$MXCHIP_PAT@$MXCHIP_REPO
+      cd devkit-mbedos5-pnp-sample
+      git submodule init
+      git config submodule.mbed-iot-devkit-sdk.url https://$MXCHIP_PAT@$MBED_DEVKIT_SDK
+      git submodule update --recursive
+      cd mbed-iot-devkit-sdk
+      git submodule init
+      git config submodule.components/azure-iot-sdk-c.url https://$MXCHIP_PAT@$DEVKIT_CSDK
+      git submodule update --recursive
+      cd ../..
+    displayName: 'git clone'
+    env:
+      MXCHIP_PAT: $(MXCHIP-PAT)
+      MXCHIP_REPO: $(MXCHIP-REPO)
+      MBED_DEVKIT_SDK: $(MBED-DEVKIT-SDK)
+      DEVKIT_CSDK: $(DEVKIT-CSDK)
+  - script: |
+      . build_all/mbed5/build.sh
+    displayName: 'build'
+  - script: |
+      ls
+      cp ./devkit-mbedos5-pnp-sample/BUILD/AZ3166/GCC_ARM/devkit-mbedos5-pnp-sample.bin /media/john/AZ3166
+    displayName: 'deploy'

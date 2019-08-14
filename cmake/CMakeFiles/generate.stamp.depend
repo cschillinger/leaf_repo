@@ -1,0 +1,31 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CTestTargets.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/DartConfiguration.tcl.in
+C:/Program Files/CMake/share/cmake-3.15/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/WindowsPaths.cmake
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/CMakeLists.txt
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/3.15.0/CMakeCCompiler.cmake
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/3.15.0/CMakeCXXCompiler.cmake
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/3.15.0/CMakeRCCompiler.cmake
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/cmake/CMakeFiles/3.15.0/CMakeSystem.cmake
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/configs/azure_iot_sdksFunctions.cmake
+C:/Users/t-chschi/Documents/azure-iot-sdk-c-pnp/dependencies.cmake
